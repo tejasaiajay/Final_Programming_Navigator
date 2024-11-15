@@ -107,41 +107,55 @@ color: #17c0eb
   color: #0c679e;
   margin-bottom: 5px;
 }
-.btns{
-  margin-top: 20px;
-  margin-bottom: 5px;
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-}
-.btns button{
-  background: #0c679e;
-  width: 100%;
-  padding: 9px 0px;
-  outline: none;
-  border: 2px solid #0c679e;
-  border-radius: 5px;
-  cursor: pointer;
-  font-size: 18px;
-  font-weight: 400;
-  color: #0c679e;
-  transition: all 0.3s linear;
-}
-.btns button:first-child{
-  background: none;
-  margin-right: 5px;
-}
-.btns button:last-child{
-  color: #fff;
-  margin-left: 5px;
-}
-.btns button:first-child:hover{
-  background: #0c679e;
-  color: #fff;
-}
-.btns button:hover{
-  color: #fff;
-}
+.btns {
+    margin-top: 20px;
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  
+  .btns a {
+    text-decoration: none; /* Removes underline */
+    width: 48%; /* Ensure buttons take equal space with a small gap */
+  }
+  
+  .btns button {
+    all: unset; /* Reset default button styles */
+    display: block;
+    background: #0c679e;
+    width: 100%;
+    padding: 9px 0px;
+    border: 2px solid #0c679e;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 400;
+    color: #0c679e;
+    text-align: center;
+    transition: all 0.3s linear;
+  }
+  
+  .btns button:first-child {
+    background: none;
+    color: #0c679e;
+  }
+  
+  .btns button:first-child:hover {
+    background: #0c679e;
+    color: #fff;
+  }
+  
+  .btns button:last-child {
+    background: #0c679e;
+    color: #fff;
+  }
+  
+  .btns button:last-child:hover {
+    background: #fff;
+    color: #0c679e;
+  }
+
 @media (max-width:1045px){
   .header{
     width: 100%;
